@@ -1,40 +1,29 @@
 <?php
-$size="L";
+
+$size = "L";
 const TVA = 0.20;
-switch($size){
+switch ($size) {
 
     case "S":
         $prixHt = 10;
-            break;
- 
+        break;
+
     case "M":
         $prixHt = 12;
+        break;
 
-            break;
-        
     case "L":
         $prixHt = 14 ;
+        break;
 
-            break;
-            
     case "XL":
-        $prixHt = 16 ;
-            break;
-         
+        $prixHt = 16;
+        break;
+
     default:
-                echo "Taille inconnue";
-                };
-      
-    $prixTtc = ($prixHt+($prixHt*TVA));
-    
-    echo  "Le prix du t-shirt taille $size est de $prixTtc TTC ($prixHt € HT + 20% TVA).";
+        echo "Taille inconnue";
+};
 
-        
+$prixTtc = ($prixHt + ($prixHt * TVA));
 
-       
-
-
-
-
-
-
+echo  "Le prix du t-shirt taille $size est de $prixTtc TTC ($prixHt € HT + 20% TVA).";
